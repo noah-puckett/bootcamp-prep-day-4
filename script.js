@@ -1,25 +1,16 @@
-//
-
-
-
-var firstName = document.getElementById("first-name")
-var lastName = document.getElementById("last-name")
-
-firstName = firstName.value;
-
-
-
-
 function greet() {
-    //assign names to variables
-    //get input by id for first and last name
 
-    //get values out of the inputs
+    var firstNameInput = document.getElementById('first-name');
+    var lastNameInput = document.getElementById('last-name');
 
-    //make greeting string
-    //display greeting
+    var firstName = firstNameInput.value;
+    var lastName = lastNameInput.value;
 
+    // validate name is reasonable, clear inputs after greet?
 
-    console.log('hello' + firstName + lastName + '!');   
+    var greeting = 'hello ' + firstName + ' ' + lastName + '!';   
+    
+    var greeter = document.getElementById('greeter');
+    greeter.textContent = greeting;
 }
 
